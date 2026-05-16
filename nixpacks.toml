@@ -1,9 +1,5 @@
-# Railway/Nixpacks: build static assets, serve dist in production (not Vite dev/preview).
-[phases.install]
-cmds = ["npm ci"]
-
-[phases.build]
-cmds = ["npm run build"]
+# Let Nixpacks auto-detect Node (install + vite build). Only override production start.
+providers = ["node"]
 
 [start]
 cmd = "npm start"
