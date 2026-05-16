@@ -1,6 +1,9 @@
-# Railway/Nixpacks: use lockfile for reproducible installs (matches local npm ci).
+# Railway/Nixpacks: build static assets, serve dist in production (not Vite dev/preview).
 [phases.install]
 cmds = ["npm ci"]
 
 [phases.build]
 cmds = ["npm run build"]
+
+[start]
+cmd = "npm start"

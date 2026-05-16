@@ -10,8 +10,9 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
+    "start": "serve dist -s --listen tcp://0.0.0.0:${PORT:-3000}",
     "lint": "eslint .",
-    "preview": "vite preview"
+    "preview:local": "vite preview"
   },
   "dependencies": {
     "@ag-fashions/shared": "file:./packages/shared",
@@ -35,6 +36,7 @@
     "react-dom": "^19.2.5",
     "react-router-dom": "^7.15.0",
     "recharts": "^3.8.1",
+    "serve": "^14.2.4",
     "tailwind-merge": "^3.5.0"
   },
   "devDependencies": {
