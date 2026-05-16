@@ -1,0 +1,6 @@
+# Railway/Nixpacks: use lockfile for reproducible installs (matches local npm ci).
+[phases.install]
+cmds = ["npm ci"]
+
+[phases.build]
+cmds = ["npm run build"]
